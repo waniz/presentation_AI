@@ -52,3 +52,11 @@ h1
   z-index: 1000;
   width: 6000px;
 }
+
+.second_screen_image
+{
+  z-index: 1000;
+  position: fixed;
+  right: 2000px;
+
+}
