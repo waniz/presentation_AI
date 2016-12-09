@@ -1,0 +1,40 @@
+AI presentation structure:
+  1. Finite state machine (конечный автомат)
+      - пример (russian AI cup, с шагами)
+      - ограничения, машина Тьюринга
+      - где используются и зачем
+      http://alumni.media.mit.edu/~jorkin/gdc2006_orkin_jeff_fear.pdf
+      http://www.cgf-ai.com/docs/straatman_remco_killzone_ai.pdf
+
+  2. Поиск пути
+      - графы
+      - DFS, BFS (плюсы и минусы)
+      - Lee, Dijkstra
+      - A* + modifications (лучевой поиск, IDA*, JPS)
+      - Theta*
+      http://pmg.org.ru/ai/stout.htm#robust_trace
+
+  3. Нейронные сети для игр, когда подходят, а когда нет (Atari games, Go, Chess)
+
+  4. Генетические алгоритмы (оптимизация)
+
+  5. Агенты (goal-driven agents)
+
+  6. Fussy logic (нечеткая логика)
+
+  7. Behavior trees (Поведенческие деревья)
+
+  8. Utility-based models
+      http://intrinsicalgorithm.com/IAonAI/2012/11/ai-architectures-a-culinary-guide-gdmag-article/
+
+
+COOL visuals - http://qiao.github.io/PathFinding.js/visual/
+
+Ideas for presentation:
+http://joelb.me/scrollpath/
+http://www.vandelaydesign.com/parallax-scrolling-best-practices-examples-and-tutorials/
+http://futureofcarsharing.com/
+
+
+Presentation notes:
+Horizontal parallax effect based on jQuery.
