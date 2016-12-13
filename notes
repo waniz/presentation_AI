@@ -36,8 +36,23 @@ http://www.vandelaydesign.com/parallax-scrolling-best-practices-examples-and-tut
 http://futureofcarsharing.com/
 
 
-Presentation notes:
-  Screen 1:
-    start screen with a picture from google pictures
-  Screen 2:
-    simple AI ()
+  Structure:: the improvement AI path
+    1. start page (picture, title, level 0)
+    2. the simplest AI - if coding (proc and cons, level 1)
+    3. next step - state machine and behavior tree (proc and cons, examples, level 2) hard-coded FSM, hierarchical FSM, combining FSM and behaviour tree
+      - decision tree picture p.344 AI for Games, p346
+      - state machine p358 AI for Games
+    4. movement:
+      4.1 Graph
+      4.2 simple pathfinder BFS DFS (pictures, +-)
+      4.3 dijkstra
+      4.4 mekka of pathfinder - A*
+      4.5 A* optimisation (лучевой поиск, IDA*, JPS)
+      4.6 human movement search - Theta*
+    5. goal-driven agents
+      5.1 Goals
+      5.2 Actions
+      5.3 Potential Field
+    6. Fussy logic (нечеткая логика)
+    7. Ниша нейронных сетей в современном мире (proc and cons, examples, level 3)
+    8. Генетические алгоритмы (оптимизация)

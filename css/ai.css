@@ -53,10 +53,14 @@ h1
   width: 6000px;
 }
 
-.second_screen_image
+.this_text
 {
-  z-index: 1000;
-  position: fixed;
-  right: 2000px;
+  z-index: 9999;
+  bottom: auto;
+  top: 0;
+}
 
+.slide
+{
+  position:absolute;
 }

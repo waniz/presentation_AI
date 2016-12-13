@@ -6,8 +6,27 @@
     <link rel="stylesheet" href="css/ai.css" />
 </head>
 <body>
-    <h1>AI презентация</h1>
 
+			<div class="this_text scroll">
+					<div class="slide" data-position="1">
+							<h1>AI Presentation</h1>
+							<p>Optional: callback function that will be called when the user scrolls down, useful for animating other things on the page</p>
+					</div>
+					<div class="slide" data-position="2">
+							<h1>AI in Games</h1>
+							<p>An array containing the selector(s) for the elements you want to animate</p>
+							<p>Optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height</p>
+					</div>
+					<div class="slide" data-position="3">
+							<h1>Example</h1>
+							<p><img src="assets/helpers/if_coding_hell.jpg" style="width: 100%;" /></p>
+					</div>
+					<div class="slide" data-position="4">
+							<h1>AI in Games</h1>
+							<p>An array containing the selector(s) for the elements you want to animate</p>
+							<p>Optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height</p>
+					</div>
+			</div>
 		<div class="horizon scroll">
         <img src="assets/horizon.png" alt="" />
     </div>
@@ -18,9 +37,22 @@
         <img src="assets/front.png" alt="" />
     </div>
 
+
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.jInvertScroll.min.js"></script>
     <script type="text/javascript">
+
+		var initializeSlideshow = function () {
+			var totalWidth = 0;
+			var windowWidth = $(window).width();
+			$('.slide').css({width: windowWidth}).each(function (){
+				var position = $(this).data('position');
+				$(this).css({left: position * windowWidth + 'px'});
+				totalWidth = (position * windowWidth > totalWidth) ? position * windowWidth : totalWidth;
+			});
+
+			$('.this_text').css({width: totalWidth + 'px'});
+		}
 
     (function($) {
         var elem = $.jInvertScroll(['.scroll'],       													 // an array containing the selector(s) for the elements you want to animate
@@ -37,8 +69,16 @@
           }
           else {
             elem.reinitialize();
+						initializeSlideshow();
           }
+
+
         });
+
+				$(document).ready(function () {
+					initializeSlideshow();
+				});
+
     }(jQuery));
     </script>
 </body>
