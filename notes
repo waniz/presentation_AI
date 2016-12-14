@@ -37,7 +37,7 @@ http://futureofcarsharing.com/
 
 
   Structure:: the improvement AI path
-    1. start page (picture, title, level 0)
+    +1. start page (picture, title, level 0)
     2. the simplest AI - if coding (proc and cons, level 1)
     3. next step - state machine and behavior tree (proc and cons, examples, level 2) hard-coded FSM, hierarchical FSM, combining FSM and behaviour tree
       - decision tree picture p.344 AI for Games, p346
